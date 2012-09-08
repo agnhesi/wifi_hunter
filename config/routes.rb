@@ -1,7 +1,11 @@
 WifiHunters::Application.routes.draw do
-  resources :preys
-  root :to => 'preys#index'
+  resources :preys do
+    post :search
+  end
 
+  root :to => 'preys#index'
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
