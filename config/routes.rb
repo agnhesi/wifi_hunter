@@ -1,6 +1,7 @@
 WifiHunters::Application.routes.draw do
   resources :preys do
     post :search,:on => :collection
+    get :search, :on => :collection
   end
 
   root :to => 'preys#index'
