@@ -82,7 +82,11 @@ class PreysController < ApplicationController
   end
   
   def search
-     
+     if params[:query].blank?
+        @results = []
+     else
+        @results = [params[:query]]
+     end   
   end
 
 end

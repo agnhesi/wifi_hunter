@@ -4,3 +4,10 @@
 <%= submit_tag('Search') %>
 
 <% end %> 
+
+<% @results.each do | result | %>
+	<p> 
+		<%= result %>
+	</p>	
+<% end %>
+
