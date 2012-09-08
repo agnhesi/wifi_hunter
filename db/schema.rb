@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(:version => 20120908154426) do
     t.string   "person_name"
     t.string   "person_email"
     t.string   "country"
-    t.string   "stage"
+    t.string   "state"
     t.string   "city"
     t.string   "place"
     t.datetime "created_at",   :null => false

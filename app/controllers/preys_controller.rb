@@ -85,7 +85,10 @@ class PreysController < ApplicationController
      if params[:query].blank?
         @results = []
      else
-        @results = [params[:query]]
+        @results = Prey.where(:country => params[:query])
+        @results.concat(Prey.where(:stage => params[:query])) 
+        @results.concat(Prey.where(:city => params[:query]))
+        @results.concat(Prey.where(:place => params[:query]))
      end   
   end
 

@@ -4,7 +4,7 @@ class CreatePreys < ActiveRecord::Migration
       t.string :person_name
       t.string :person_email
       t.string :country
-      t.string :stage
+      t.string :state
       t.string :city
       t.string :place
 
