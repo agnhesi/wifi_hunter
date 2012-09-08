@@ -89,6 +89,7 @@ class PreysController < ApplicationController
         @results.concat(Prey.where(:state => params[:query])) 
         @results.concat(Prey.where(:city => params[:query]))
         @results.concat(Prey.where(:place => params[:query]))
+        @results.uniq!
      end   
   end
 
