@@ -1,4 +1,38 @@
-#application{
+#title {
+  display: inline;
+  font-size: 120px;}
+
+#alltitle {
+  width: 100%;
+  text-align: center; 
+}
+
+#menu {
+  text-align: center;
+  font-size: 40px;
+
+}
+
+#preys_table{
+  float: right;
+  height: 100%;
+  width: 50%;
+
+}
+
+#content {
+  text-align: center;
+  vertical-align: center;
+  margin-top: 30px;
+  height: 500px;
+  font-size: 30px;
+  width: 50%;
+}
+
+#content2 {
+}
+
+#application {
   text-align:center;  
 }
 
