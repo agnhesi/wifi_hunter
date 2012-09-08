@@ -4,7 +4,7 @@ one:
   person_name: MyString
   person_email: MyString
   country: MyString
-  stage: MyString
+  state: MyString
   city: MyString
   place: MyString
 
@@ -12,6 +12,6 @@ two:
   person_name: MyString
   person_email: MyString
   country: MyString
-  stage: MyString
+  state: MyString
   city: MyString
   place: MyString

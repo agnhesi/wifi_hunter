@@ -18,7 +18,7 @@ class PreysControllerTest < ActionController::TestCase
 
   test "should create prey" do
     assert_difference('Prey.count') do
-      post :create, prey: { city: @prey.city, country: @prey.country, person_email: @prey.person_email, person_name: @prey.person_name, place: @prey.place, stage: @prey.stage }
+      post :create, prey: { city: @prey.city, country: @prey.country, person_email: @prey.person_email, person_name: @prey.person_name, place: @prey.place, state: @prey.state }
     end
 
     assert_redirected_to prey_path(assigns(:prey))
@@ -35,7 +35,7 @@ class PreysControllerTest < ActionController::TestCase
   end
 
   test "should update prey" do
-    put :update, id: @prey, prey: { city: @prey.city, country: @prey.country, person_email: @prey.person_email, person_name: @prey.person_name, place: @prey.place, stage: @prey.stage }
+    put :update, id: @prey, prey: { city: @prey.city, country: @prey.country, person_email: @prey.person_email, person_name: @prey.person_name, place: @prey.place, state: @prey.state }
     assert_redirected_to prey_path(assigns(:prey))
   end
 
