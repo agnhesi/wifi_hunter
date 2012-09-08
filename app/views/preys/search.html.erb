@@ -1,9 +1,11 @@
-<%= form_tag(search_preys_path, :method => 'POST') do %>
+<div id="search"> 
+	<p>
+		<%= form_tag(search_preys_path, :method => 'POST') do %>
 
-<%= text_field_tag(:query) %>
-<%= submit_tag('Search') %>
+		<%= text_field_tag(:query) %>
+		<%= submit_tag('Search') %>
 
-<% end %> 
-
-<%= render @results %>
-
+		<% end %> 
+	</p>
+	<%= render @results %>
+</div>
